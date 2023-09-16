@@ -51,6 +51,7 @@ body {
   height: 100%;
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
+  font-weight: 500;
 }
 
 /*  */
@@ -64,14 +65,13 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 50px;
-  background-color: rgb(27, 25, 25);
+  background-color: rgb(78, 78, 78);
   overflow: hidden;
 }
 
 .slider__input {
   display: none;
 }
-
 
 .slider__content, .slider__paragraf {
   display: flex;
@@ -97,6 +97,7 @@ body {
 }
 
 .slide__text {
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -142,7 +143,6 @@ body {
   visibility: visible;
 }
 
-
 /* кнопки */
 
 .slider__buttons {
@@ -154,6 +154,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 5px ;
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -180,4 +181,33 @@ body {
 #number-5:checked ~ .slider__buttons > .label-5 .slider__bnt,
 #number-6:checked ~ .slider__buttons > .label-6 .slider__bnt {
   background-color: transparent;
+}
+
+
+/* mobil */
+@media (max-width:1240px) {
+
+  .slider__wrapper {
+    padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1240 - 320)));
+  }
+  .slide__text {
+    font-size: calc(1rem + (1.5 - 1) * ((100vw - 320px) / (1240 - 320)));
+  }
+}
+
+
+@media (max-width:568px) {
+  .slider__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .slider__buttons {
+    justify-content: center;
+    padding: 10px;
+  }
+  .slider__paragraf {
+    padding-top: 0px;
+    margin-bottom: 0px;
+    order: 3;
+  }
 }
