@@ -3,31 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <title>Meme</title>
 </head>
 <body>
+  <!-- что то запуталась, разобраться с разметкой -->
   <div class="slider">
-    <div class="container">
-      <div class="slide-1">
-        <img src="img/meme_1.jpeg" alt="meme-1">
+    <div class="slider__wrapper">
+      <input type="radio" class="slider__input" name="slide" value="1" id="number-1" checked>
+      <input type="radio" class="slider__input" name="slide" value="2" id="number-2">
+      <input type="radio" class="slider__input" name="slide" value="3" id="number-3">
+      <input type="radio" class="slider__input" name="slide" value="4" id="number-4">
+      <input type="radio" class="slider__input" name="slide" value="5" id="number-5">
+      <input type="radio" class="slider__input" name="slide" value="6" id="number-6">
+      <div class="slider__content content">
+      <div class="content__slide slide-1">
+        <img src="img/meme_1.jpg" alt="meme-1" class="content__img">
       </div>
-      <div class="slide-2">
-        <img src="img/meme_2.jpg" alt="meme-2">
+      <div class="content__slide slide-2">
+        <img src="img/meme_6.jpg" alt="meme-2" class="content__img">
       </div>
-      <div class="slide-3">
-        <img src="img/meme_3.jpg" alt="meme-3">
+      <div class="content__slide slide-3">
+        <img src="img/meme_3.jpg" alt="meme-3" class="content__img">
       </div>
-      <div class="slide-4">
-        <img src="img/meme_4.jpeg" alt="meme-4">
+      <div class="content__slide slide-4">
+        <img src="img/meme_4.jpg" alt="meme-4" class="content__img">
       </div>
-      <div class="slide-5">
-        <img src="img/meme_5.jpg" alt="meme-5">
+      <div class="content__slide slide-5">
+        <img src="img/meme_5.jpg" alt="meme-5" class="content__img">
       </div>
-      <div class="slide-5">
-        <img src="img/meme_6.jpeg" alt="meme-6">
+
+      <div class="content__slide slide-6">
+        <img src="img/meme_2.jpg" alt="meme-6" class="content__img">
       </div>
+    </div>
+      <div class="slider__paragraf">
+        <p class="slide__text text-1">Первая подпись</p>
+        <p class="slide__text text-2">Вторая подпись</p>
+        <p class="slide__text text-3">Третья подпись</p>
+        <p class="slide__text text-4">Четверная подпись</p>
+        <p class="slide__text text-5">Пятая подпись</p>
+        <p class="slide__text text-6">Шестая подпись</p>
+    </div>
+    <div class="slider__buttons">
+      <label for="number-1" class="slider__lable label-1">
+        <span class="slider__bnt"></span>
+      </label>
+      <label for="number-2" class="slider__lable label-2">
+        <span class="slider__bnt"></span>
+      </label>
+      <label for="number-3" class="slider__lable label-3">
+        <span class="slider__bnt"></span>
+      </label>
+      <label for="number-4" class="slider__lable label-4">
+        <span class="slider__bnt"></span>
+      </label>
+      <label for="number-5" class="slider__lable label-5">
+        <span class="slider__bnt"></span>
+      </label>
+      <label for="number-6" class="slider__lable label-6">
+        <span class="slider__bnt"></span>
+      </label>
+    </div>
     </div>
   </div>
 </body>
